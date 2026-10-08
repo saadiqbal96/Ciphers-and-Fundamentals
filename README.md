@@ -1,5 +1,7 @@
 # Ciphers and Fundamentals (Work in Progress...)
 
+# LESSON 1
+
 **Encryption**
 
 Encryption was introduced in order to communicate safely over the Internet.
@@ -53,3 +55,43 @@ Hashing is used to verify integrity, not confidentiality.
 - Hashing checks whether data has been changed.
 
 *Examples:* SHA-256, SHA-3..
+
+# LESSON 2
+
+**Main Topics**
+- Symmetric (Secret Key) Encryption.
+- Stream and Block Ciphers.
+- Salting Techniques.
+- Hash Functions.
+- Password Security.
+- HMAC Authentication.
+- One-Time Passwords (OTP).
+
+**Key Goal**
+
+Understand how data is encrypted, stored securely, and verified for integrity.
+
+**Symmetric Key Encryption**
+- Same key used for encryption and decryption.
+- Fast and efficient.
+- Suitable for large amounts of data.
+
+**Common Algorithms**
+
+*Modern* 
+- AES (Advanced Encryption Standard)
+- AES-128.
+- AES-192.
+- AES-256.
+
+*Legacy*
+- DES (Data Encryption Standard).
+- 3DES (Triple DES).
+- Blowfish.
+- RC4 (deprecated).
+
+*Typical Uses*
+- VPNs.
+- File Encryption.
+- Disk Encryption.
+- Secure Communications.
