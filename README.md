@@ -95,3 +95,115 @@ Understand how data is encrypted, stored securely, and verified for integrity.
 - File Encryption.
 - Disk Encryption.
 - Secure Communications.
+
+**Stream Chiphers**
+
+*How they work*
+- Encrypt data one bit or byte at a time
+- Generate a continuous keystream
+
+*Common Stream Ciphers*
+- RC4 (historically important but insecure today)
+- Salsa20
+- ChaCha20
+
+*Advantages*
+- Fast processing
+- Ideal for live communications
+- Low memory requirements
+
+*Examples*
+- VoIP calls
+- Video streaming
+- Wireless communications
+
+**Block Ciphers**
+
+*How they work*
+- Encrypts fixed-size blocks of data
+- AES uses 128-bit blocks
+
+ *Common Block Ciphers*
+ - AES
+ - DES
+ - 3DES
+ - Blowfish
+ - Twofish
+
+*Cipher Modes*
+- ECB
+- CBC
+- CFB
+- OFB
+- CTR
+- GCM (widely used today)
+
+*Applications*
+- File encryption
+- Database security
+- Full-disk encryption
+
+**Salting & OpenSSL**
+
+*What is Salt?*
+Random data added before encryption or hashing.
+
+*Benefits*
+- Prevents identical outputs
+- Protects against rainbow table attacks
+- Makes password attacks more difficult
+
+*Example*
+Password: Password123
+Salt: x7F9K!
+
+Stored Value: Password123x7F9K!
+
+*OPENSSL*
+
+Common commands include:
+- Encryption/decryption
+- Certificate generation
+- Hash generation
+- Key management
+
+**Introduction to Hashing**
+
+*What is Hashing?*
+- Converts data into a fixed-length value
+- One-way process
+- Cannot be reversed
+
+*Common Hash Functions*
+
+Legacy (Weak)
+- MD5 (128-bit)
+- SHA-1 (160-bit)
+
+*Modern*
+- SHA-256
+- SHA-384
+- SHA-512
+- SHA-3
+
+*Uses*
+- Password storage
+- Integrity checking
+- Digital signatures
+- File verification
+
+**Hash length & Collission**
+
+*Hash length Examples:*
+
+Algorithm/Length: MD5/128-bit, SHA-1/160-bit, SHA-256/256-bit, SHA-512/512-bit.
+
+*Hash Collission*
+- Occurs when two inputs produce the same hash value.
+- A secure hash function makes collisions extremely unlikely.
+
+*Security Ranking*
+- SHA-512
+- SHA-256
+- SHA-1 (deprecated)
+- MD5 (broken)
